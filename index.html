@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+  <!-- AJAX -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet"> 
+
+  <!-- JavaScript -->
+  <script src="./application.js"></script>
+  
+  <!-- Title -->
+  <title>To Do List</title>
+
+</head>
+</html>
+<body class="bg-info">
+
+  <!-- Header -->
+  <h1 class="text-center mt-5"><strong>To-Do List</strong></h1>
+
+  <!-- Input Container -->
+  <div class="container border mt-5 bg-light rounded shadow-lg">
+
+    <!-- Item Input Section -->
+    <div id="addItem" class="d-flex justify-content-center my-3">
+        <input name="item" type="text" id="addItemInput" class="mx-2 border border-info rounded px-2" placeholder="Got anything to do ?" required />
+        <button class="btn btn-info btn-block addItemButton mx-2 text-white">Add Item</button>
+    </div>
+  </div>
+
+  <!-- Item Container -->
+  <div class="container border mt-2 bg-light rounded shadow-lg">
+
+    <!-- Active/ Completed Buttons -->
+    <div class="d-flex justify-content-end my-2 bg-light border-bottom">
+      <button class="btn btn-outline-info allButton mb-2 mx-2">All</button>
+      <button class="btn btn-outline-info activeButton mb-2 mx-2">Active</button>
+      <button class="btn btn-outline-info completedButton mb-2 mx-2">Completed</button>
+      
+    </div>
+
+  <!-- Item List -->
+  <div class="itemList">
+  </div>
+</div>
+</body>
